@@ -13,8 +13,9 @@ function App() {
   return (
     <div className="App">
      <BrowserRouter>
+     <Header></Header>
      <Routes>
-      <Route element={<Header></Header>}>
+      <Route>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/about' element={<About></About>}></Route>
       <Route path='/product' element={<Product Productforcart={Productforcart} setproductforcart={setproductforcart}></Product>}></Route>
