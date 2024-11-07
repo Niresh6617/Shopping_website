@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {} from 'react'
 import products from './Product.js';
 import './Product.css'; // Adjust the path as needed
 
