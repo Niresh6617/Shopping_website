@@ -1,57 +1,117 @@
-/* Home.css */
-
 .page-content {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #f9f9f9; /* Light background for contrast */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  padding: 2rem 0; /* Add top and bottom padding */
+}
+
+.hero-section {
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 1rem;
   text-align: center;
-  
+  border-bottom: 2px solid #ddd;
 }
 
-.page-content h1 {
-  font-size: 2.5rem;
-  color: #333; /* Dark color for readability */
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.page-content p {
-  font-size: 1.1rem;
-  color: #555; /* Softer gray for descriptive text */
-  line-height: 1.6;
-}
-
-.page-content h2 {
+.hero-section h2 {
   font-size: 1.8rem;
-  color: #222; /* Slightly darker heading color */
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.page-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.page-content ul li {
-  font-size: 1.1rem;
-  color: #444; /* Darker color for list items */
-  margin: 0.5rem 0;
-  padding-left: 1.2rem;
-  position: relative;
-}
-
-.page-content ul li::before {
-  content: "✓";
-  color: #007bff; /* Bootstrap primary color */
-  position: absolute;
-  left: 0;
-}
-
-.page-content p:last-child {
   font-weight: 600;
+  color: #333;
+}
+
+.cards-container {
+
+  /* border: 1px solid black; */
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.cards-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.view-more-btn {
   margin-top: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.marquee-container {
+  /* background-color: #f8f9fa; */
+  padding: 1rem;
+}
+
+.brand-logo {
+  margin-right: 15px;
+  width: 200px;
+  height: 150px;
+}
+
+.instagram-container {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.instagram-container h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.instagram-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.insta-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  max-height: 180px; /* Uniform height for images */
+}
+
+.insta-img img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 576px) {
+  .insta-img {
+    margin: 0 0.5rem; /* Adjust spacing between images */
+  }
+}
+
+@media (max-width: 576px) {
+  .insta-img {
+    margin-bottom: 1rem; /* Vertical spacing for smaller screens */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cards-container {
+    padding: 1rem;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
 }

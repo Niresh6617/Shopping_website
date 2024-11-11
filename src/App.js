@@ -6,6 +6,7 @@ import { About } from './About';
 import { Product } from './Product.jsx';
 import { Cart } from './Cart';
 import { useState } from 'react';
+import { Footer } from './Footer.js';
 
 function App() {
   const [Productforcart, setproductforcart] = useState([]);
@@ -21,6 +22,7 @@ function App() {
       <Route path='/cart' element={<Cart Productforcart={Productforcart} setproductforcart={setproductforcart}></Cart>}></Route>
       </Route>
      </Routes>
+     <Footer></Footer>
      </BrowserRouter>
     </div>
   );

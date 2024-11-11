@@ -7,10 +7,8 @@ export const Header = () => {
       <div className="logo">BagZone</div>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
         <Link to="/product">Products</Link>
         <Link to="/cart">Cart</Link>
-        
       </nav>
     </header>
   );
