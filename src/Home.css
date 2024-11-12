@@ -1,6 +1,6 @@
 .page-content {
   width: 100%;
-  padding: 2rem 0; /* Add top and bottom padding */
+  /* padding: 2rem 0; Add top and bottom padding */
 }
 
 .hero-section {
@@ -87,7 +87,7 @@
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  max-height: 180px; /* Uniform height for images */
+  /* max-height: 180px; Uniform height for images */
 }
 
 .insta-img img:hover {
