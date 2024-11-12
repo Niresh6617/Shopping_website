@@ -52,3 +52,15 @@
   font-size: 0.9rem;
   font-weight: bold;
 }
+.hero-section{
+    padding: 20px 20px;
+}
+.hero-section h1{
+  font-family: serif;
+  font-size: 50px;
+}
+.hero-section h5{
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 400;
+}

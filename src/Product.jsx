@@ -24,7 +24,7 @@ export const Product = ({ Productforcart, setproductforcart }) => {
       {/* Hero Section */}
       <div className="hero-section">
         <h1>Products</h1>
-        <h3>Home > Products</h3>
+        <h5>Home > Products</h5>
       </div>
 
       {/* Product List */}
