@@ -1,0 +1,59 @@
+/* signup.css */
+
+/* General styling for the signup page */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc;
+}
+
+.signup-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.signup-form input[type='submit'] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.signup-form input[type='submit']:hover {
+    background-color: #45a049;
+}
+
+.signup-form a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
