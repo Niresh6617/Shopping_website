@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Header.css'
-export const Header = () => {
+export const Header = ({UserEmail}) => {
+  console.log(UserEmail);
+  
   return (
     <header className="header">
       <div className="logo">BagZone</div>
@@ -9,8 +11,9 @@ export const Header = () => {
         <Link to="/">Home</Link>
         <Link to="/product">Products</Link>
         <Link to="/cart">Cart</Link>
-        <Link to="/signup">Signup</Link>
-        <Link to="/login">Login</Link>
+        {
+          UserEmail ? <p>Hi, 👋 {UserEmail}</p> : <Link to="/signup">Signup</Link>
+        }
       </nav>
     </header>
   );

@@ -5,13 +5,14 @@ import { getAuth } from 'firebase/auth'
 import './signup.css'
 import { auth } from '../firebase'
 
-export const Signup = () => {
+export const Signup = ({setUserEmail}) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const navigate = useNavigate()
 
     const datapass = async (e) => {
         e.preventDefault()
+        setUserEmail(email)
         const createuser = await createUserWithEmailAndPassword(auth,email,password)
         console.log(createuser);
         navigate('/login')
